@@ -94,6 +94,7 @@ void mzHashTableClear(HashTable* pHashTable);
  */
 void mzHashTableFree(HashTable* pHashTable);
 
+#define INLINE static
 /*
  * Get #of entries in hash table.
  */

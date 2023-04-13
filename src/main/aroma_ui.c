@@ -102,6 +102,11 @@ typedef struct {
 #include "libs/aroma_uimain.c"
 #include "libs/aroma_handler.c"
 
+
+static __inline sighandler_t bsd_signal(int s, sighandler_t f) {
+  return signal(s, f);
+}
+
 //*
 //* AROMA START UI
 //*
